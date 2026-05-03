@@ -11,6 +11,7 @@ sass:
 collections:
     category:
         output: true
+        permalink: /category/:name/
     authors:
         output: false
 
