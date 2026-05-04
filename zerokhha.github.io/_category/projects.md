@@ -1,4 +1,0 @@
----
-category: projects
-title: "Projects"
----
