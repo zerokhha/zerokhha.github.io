@@ -16,12 +16,12 @@ category: [projects]
 ```
 Binance WebSocket
     └─→ Redis (버퍼)
-            └─→ PostgreSQL (market_indicators)
-                        └─→ dbt staging (stg_market_indicators)
-                                    └─→ dbt marts
-                                            ├─ mrt_ohlcv
-                                            └─ mrt_vol_imbalance
-                                                    └─→ Airflow (1시간 주기 스케줄링)
+        └─→ PostgreSQL (market_indicators)
+                └─→ dbt staging (stg_market_indicators)
+                          └─→ dbt marts
+                                ├─ mrt_ohlcv
+                                └─ mrt_vol_imbalance
+                                └─→ Airflow (1시간 주기 스케줄링)
 
 장애 발생 시
     └─→ backfill.py (Binance Kline REST API → PostgreSQL 직접 적재)
