@@ -5,7 +5,11 @@
     <main id="portfolio">
       <div class="container">
         <div class="row">
+  
           <div class="col-md-12">
+
+            <div class="text-center">
+            
 
             <h2 class="section-title text-center" style="margin-top: 50px; margin-bottom: 10px;"> Work Experience </h2>
             <p class="section-subtitle text-center">Professional projects and production-grade work</p>
@@ -20,9 +24,6 @@
                   </div>
                 {% endfor %}
               </div>
-              {% if work_posts.size > 6 %}
-                <p class="text-center"><a href="/"></a></p>
-              {% endif %}
             {% else %}
               <p class="text-center" style="color: #bbb; margin-bottom: 50px;">No registered professional projects available.</p>
             {% endif %}
@@ -32,18 +33,15 @@
             <p class="section-subtitle text-center">Side projects and toy projects for exploration</p>
             <div class="break" style="margin-bottom: 30px;"></div>
 
-            {% assign personal_posts = site.posts | where: "categories", "personal" %}
+            {% assign personal_posts = site.posts | where: "categories", "personal" | sort: "date" | reverse %}
             {% if personal_posts.size > 0 %}
-              {% for post in personal_posts %}
-                <div class="wow fadeIn">
-                  {% if post.position == "left" %}
-                    {% include content-left.html %}
-                  {% endif %}
-                  {% if post.position == "right" %}
-                    {% include content-right.html %}
-                  {% endif %}
-                </div>
-              {% endfor %}
+              <div class="work-list row">
+                {% for post in personal_posts %}
+                  <div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn">
+                    {% include content-list.html %}
+                  </div>
+                {% endfor %}
+              </div>
             {% else %}
               <p class="text-center" style="color: #bbb;">No registered personal projects available.</p>
             {% endif %}

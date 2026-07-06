@@ -38,6 +38,10 @@ body {
   background-color: #e9edf0;
   @extend %opensans;
   -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none; /* 사파리(Safari) 브라우저용 */
+  -moz-user-select: none;    /* 파이어폭스(Firefox) 브라우저용 */
+  -ms-user-select: none;     /* 인터넷 익스플로러/엣지 구버전용 */
+  user-select: none;         /* 표준 속성 (크롬, 엣지 등 최신 브라우저) */
 }
 
 *, *:before, *:after {
@@ -129,12 +133,12 @@ button.btn, input.btn {
 	2.0 Home Hero
 --------------------------------------------------------------*/
 .hero-container {
-  margin: 10em 0 9em 0;
+  margin: 8em 0 4em 0;
   @include bp-xsmall {
-    margin: 5em 0 5em 0;
+    margin: 4em 0 4em 0;
   }
   @include bp-small {
-    margin: 5em 0 5em 0;
+    margin: 4em 0 4em 0;
   }
 }
 
@@ -163,6 +167,15 @@ button.btn, input.btn {
     i {
       padding-right: 0.5em;
     }
+  }
+  .hero-intro {
+    color: #9eb1bd;
+    margin-top: 1em;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+    font-size: 1.05em;
   }
 }
 

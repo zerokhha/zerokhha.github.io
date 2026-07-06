@@ -22,6 +22,11 @@
             {% include contact.html %}
             {% endif %}
           </p>
+          {% if site.description != '' %}
+          <p class="text-center hero-intro">
+            안녕하세요, 저는 금융·공공 데이터 환경에서 Vertica 기반 대용량 DW 아키텍처와 데이터 파이프라인을 설계·구축·운영하는 데이터 엔지니어 ZeroKhha입니다.
+          </p>
+          {% endif %}
           {% if site.enable_contact == true %}
           {% include contact-modal.html %}
           {% endif %}
