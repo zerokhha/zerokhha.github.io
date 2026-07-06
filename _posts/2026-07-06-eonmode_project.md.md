@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Eon Mode 재구축 프로젝트"
-date: 2026-07-06 12:00:00 +0900
+date: 2026-07-06 00:00:00 +0900
 categories: [Project]
 ---
 
