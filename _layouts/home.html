@@ -8,7 +8,7 @@
           <div class="col-md-12">
 
             <h2 class="section-title text-center" style="margin-top: 50px; margin-bottom: 10px;"> Work Experience </h2>
-            <p class="section-subtitle text-center">회사 및 실무에서 진행한 프로젝트 경험입니다.</p>
+            <p class="section-subtitle text-center">Professional projects and production-grade work</p>
             <div class="break" style="margin-bottom: 30px;"></div>
 
             {% assign work_posts = site.posts | where: "categories", "work" %}
@@ -24,12 +24,12 @@
                 </div>
               {% endfor %}
             {% else %}
-              <p class="text-center" style="color: #bbb; margin-bottom: 50px;">아직 등록된 실무 프로젝트가 없습니다.</p>
+              <p class="text-center" style="color: #bbb; margin-bottom: 50px;">No registered professional projects available.</p>
             {% endif %}
 
 
             <h2 class="section-title text-center" style="margin-top: 100px; margin-bottom: 10px;"> Personal Projects</h2>
-            <p class="section-subtitle text-center">사이드 프로젝트 및 개인적으로 연구한 결과물입니다.</p>
+            <p class="section-subtitle text-center">Side projects and toy projects for exploration</p>
             <div class="break" style="margin-bottom: 30px;"></div>
 
             {% assign personal_posts = site.posts | where: "categories", "personal" %}
@@ -45,7 +45,7 @@
                 </div>
               {% endfor %}
             {% else %}
-              <p class="text-center" style="color: #bbb;">아직 등록된 개인 프로젝트가 없습니다.</p>
+              <p class="text-center" style="color: #bbb;">No registered personal projects available.</p>
             {% endif %}
 
           </div>
