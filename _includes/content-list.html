@@ -1,5 +1,8 @@
 <div class="work-item">
-  {% assign work_link = post.project_link | default: post.url %}
+  {% assign work_link = post.project_link %}
+  {% if work_link == nil or work_link == '' %}
+    {% assign work_link = post.url %}
+  {% endif %}
   <h3 class="work-title"><a href="{{ work_link | relative_url }}">{{ post.title }}</a></h3>
   {% if post.lead_text %}
     <p class="work-lead">{{ post.lead_text }}</p>
@@ -7,7 +10,7 @@
   <p class="work-excerpt">{% if post.excerpt %}{{ post.excerpt | strip_html | truncate: 200 }}{% else %}{{ post.content | strip_html | truncate: 200 }}{% endif %}</p>
   <p>
     <a class="btn btn-default" href="{{ work_link | relative_url }}">
-      {% if post.button_text %}{{ post.button_text }}{% else %}Read More{% endif %}
+      {{ post.button_text | default: "Read More" }}
     </a>
   </p>
 </div>
