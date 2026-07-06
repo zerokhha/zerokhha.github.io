@@ -11,18 +11,18 @@
             <p class="section-subtitle text-center">Professional projects and production-grade work</p>
             <div class="break" style="margin-bottom: 30px;"></div>
 
-            {% assign work_posts = site.posts | where: "categories", "work" %}
+            {% assign work_posts = site.posts | where: "categories", "work" | sort: "date" | reverse %}
             {% if work_posts.size > 0 %}
-              {% for post in work_posts %}
-                <div class="wow fadeIn">
-                  {% if post.position == "left" %}
-                    {% include content-left.html %}
-                  {% endif %}
-                  {% if post.position == "right" %}
-                    {% include content-right.html %}
-                  {% endif %}
-                </div>
-              {% endfor %}
+              <div class="work-list row">
+                {% for post in work_posts limit:6 %}
+                  <div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn">
+                    {% include content-list.html %}
+                  </div>
+                {% endfor %}
+              </div>
+              {% if work_posts.size > 6 %}
+                <p class="text-center"><a href="/">See all projects</a></p>
+              {% endif %}
             {% else %}
               <p class="text-center" style="color: #bbb; margin-bottom: 50px;">No registered professional projects available.</p>
             {% endif %}

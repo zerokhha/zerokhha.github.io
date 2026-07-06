@@ -15,11 +15,12 @@
 
 @import '../_sass/bootstrap';
 @import '../_sass/mixins';
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
 
 $primary: #0a0a0a;
 $secondary: #FF7B7B;
 
-%opensans { font-family: 'Open Sans', sans-serif; }
+%opensans { font-family:  'Nanum Gothic', 'Noto Sans KR', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; }
 %merriweather { font-family: 'Merriweather', serif; }
 
 /*--------------------------------------------------------------
@@ -36,6 +37,21 @@ body {
   background-color: #e9edf0;
   @extend %opensans;
   -webkit-font-smoothing: antialiased;
+}
+
+*, *:before, *:after {
+  font-family: 'Pretendard', 'Noto Sans KR', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif !important;
+}
+
+/* 단, 제목(h1~h6)은 Merriweather 서체를 쓰기로 했으니, 제목은 유지되도록 순서를 아래에 두거나 유지해줘 */
+h1, h2, h3, h4, h5, h6 {
+  @extend %merriweather;
+  font-weight: 700;
+}
+
+/* 5.0 Code formatting 섹션 위에 있는 button.btn 코드 블록 안이나 밖에 추가해도 좋아 */
+button.btn, input.btn {
+  @extend %opensans; /* 버튼에 확실하게 적용 */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -311,6 +327,62 @@ button.btn, input.btn {
   }
 }
 
+/* Work list styles */
+.work-list {
+  margin-bottom: 4em;
+}
+.work-item {
+  background: #fff;
+  border: 1px solid #eef3f6;
+  padding: 1.25em;
+  margin-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 180px;
+}
+.work-title {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+  font-size: 18px;
+  color: #6c7a80;
+  font-weight: 600;
+}
+.work-lead {
+  color: #9eb1bd;
+  margin-bottom: 0.4em;
+  font-size: 13px;
+}
+.work-excerpt {
+  margin-bottom: 0.6em;
+  font-size: 14px;
+  color: #4d5a60;
+}
+
+.work-item .btn {
+  margin-top: 0.5em;
+}
+
+/* Work item link colors */
+.work-list .work-item .work-title a,
+.work-list .work-item .work-title a:link,
+.work-list .work-item .work-title a:visited {
+  color: #6c7a80 !important;
+  text-decoration: none;
+}
+.work-list .work-item .work-title a:hover,
+.work-list .work-item .work-title a:focus {
+  color: #4d5a60 !important;
+  text-decoration: underline;
+}
+
 // vertically center content of post rows
 .post-row {
     align-items: center;
@@ -350,6 +422,7 @@ pre,
 code {
   color: #262626;
   font-size: 14px;
+  font-family: 'Nanum Gothic', monospace;
   border: 1px solid #E5E5E5;
   border-radius: 3px;
   background-color: #FBFBFB;  }

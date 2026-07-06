@@ -1,0 +1,8 @@
+<div class="work-item">
+  <h3 class="work-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+  {% if post.lead_text %}
+    <p class="work-lead">{{ post.lead_text }}</p>
+  {% endif %}
+  <p class="work-excerpt">{% if post.excerpt %}{{ post.excerpt | strip_html | truncate: 200 }}{% else %}{{ post.content | strip_html | truncate: 200 }}{% endif %}</p>
+  <p><a class="btn btn-default" href="{{ post.url | relative_url }}">Read More</a></p>
+</div>

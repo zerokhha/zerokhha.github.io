@@ -1,13 +1,13 @@
 ---
 layout: inner
 position: left
-title: "금융권 비즈니스 업무 이관"
-date: 2026-07-06 00:00:00 +0900
+title: "금융권 정보계 DW 성능 개선"
+date: 2026-07-06 05:00:00 +0900
 categories: work
 tags: ''
 featured_image: ''
 project_link: ''
 button_icon: ''
 button_text: ''
-lead_text: '2021.06 - 2021.10'
+lead_text: '2025.01 - 2025.05'
 ---
