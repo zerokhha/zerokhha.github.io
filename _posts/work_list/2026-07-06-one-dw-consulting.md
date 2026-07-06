@@ -6,7 +6,7 @@ date: 2026-07-06 07:00:00 +0900
 categories: work
 tags: ''
 featured_image: ''
-project_link: '/work/one-dw-detail/'
+project_link: ''
 button_icon: ''
 button_text: 'Read More'
 lead_text: '2021.03 - '
