@@ -347,7 +347,23 @@ button.btn, input.btn {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  min-height: 180px;
+  min-height: 220px;
+}
+.work-item .work-image-link {
+  display: block;
+  margin: -1.25em -1.25em 1em;
+  overflow: hidden;
+  border-bottom: 1px solid #eef3f6;
+}
+.work-item .work-featured-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.25s ease;
+}
+.work-item .work-image-link:hover .work-featured-image,
+.work-item .work-image-link:focus .work-featured-image {
+  transform: scale(1.02);
 }
 .work-title {
   margin-top: 0;
@@ -388,6 +404,16 @@ button.btn, input.btn {
 .post-row {
     align-items: center;
     display: flex;
+}
+
+.page-featured-image-wrap {
+  margin-bottom: 1.5em;
+}
+.page-featured-image {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 /*--------------------------------------------------------------

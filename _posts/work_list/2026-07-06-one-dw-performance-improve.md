@@ -6,8 +6,8 @@ date: 2026-07-06 05:00:00 +0900
 categories: work
 tags: ''
 featured_image: ''
-project_link: ''
+project_link: '/work/one-dw-performance-improve-detail/'
 button_icon: ''
-button_text: ''
+button_text: 'Read More'
 lead_text: '2025.01 - 2025.05'
 ---
