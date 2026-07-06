@@ -3,7 +3,7 @@ layout: inner
 position: left
 title: "Eon Mode 재구축 프로젝트"
 date: 2026-07-06 00:00:00 +0900
-categories: development
+categories: work
 tags: Notion Blog
 featured_image: ''
 project_link: ''

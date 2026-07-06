@@ -7,28 +7,42 @@
         <div class="row">
           <div class="col-md-12">
 
-            {% if site.section_title != '' %}
-            <h2 class="section-title text-center">{{ site.section_title }}</h2>
-            {% endif %}
-            {% if site.section_subtitle != '' %}
-            <p class="section-subtitle text-center">{{ site.section_subtitle }}</p>
-            {% endif %}
+            <h2 class="section-title text-center" style="margin-top: 50px; margin-bottom: 10px;"> 실무 프로젝트</h2>
+            <p class="section-subtitle text-center">회사 및 실무에서 진행한 프로젝트 경험입니다.</p>
+            <div class="break" style="margin-bottom: 30px;"></div>
 
-            <div class="break"></div>
-
-            {% for post in paginator.posts %}
+            {% assign work_posts = site.posts | where: "categories", "work" %}
+            {% for post in work_posts %}
               <div class="wow fadeIn">
-              {% if post.position == "left" %}
-                {% include content-left.html %}
-              {% endif %}
-
-              {% if post.position == "right" %}
-                {% include content-right.html %}
-              {% endif %}
+                {% if post.position == "left" %}
+                  {% include content-left.html %}
+                {% endif %}
+                {% if post.position == "right" %}
+                  {% include content-right.html %}
+                {% endif %}
               </div>
+            {% empty %}
+              <p class="text-center" style="color: #bbb; margin-bottom: 50px;">아직 등록된 실무 프로젝트가 없습니다.</p>
             {% endfor %}
 
-            {% include pagination.html %}
+
+            <h2 class="section-title text-center" style="margin-top: 100px; margin-bottom: 10px;">개인 프로젝트</h2>
+            <p class="section-subtitle text-center">사이드 프로젝트 및 개인적으로 연구한 결과물입니다.</p>
+            <div class="break" style="margin-bottom: 30px;"></div>
+
+            {% assign personal_posts = site.posts | where: "categories", "personal" %}
+            {% for post in personal_posts %}
+              <div class="wow fadeIn">
+                {% if post.position == "left" %}
+                  {% include content-left.html %}
+                {% endif %}
+                {% if post.position == "right" %}
+                  {% include content-right.html %}
+                {% endif %}
+              </div>
+            {% empty %}
+              <p class="text-center" style="color: #bbb;">아직 등록된 개인 프로젝트가 없습니다.</p>
+            {% endfor %}
 
           </div>
         </div>
