@@ -15,12 +15,13 @@
 
 @import '../_sass/bootstrap';
 @import '../_sass/mixins';
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@300;400;600;700&display=swap');
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
 
 $primary: #0a0a0a;
 $secondary: #FF7B7B;
 
-%opensans { font-family:  'Nanum Gothic', 'Noto Sans KR', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; }
+%opensans { font-family:  'Pretendard', 'Noto Sans KR', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; }
 %merriweather { font-family: 'Merriweather', serif; }
 
 /*--------------------------------------------------------------
