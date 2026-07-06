@@ -20,9 +20,11 @@
 
             {% if site.enable_contact == true %}
             {% include contact.html %}
-            {% include contact-modal.html %}
             {% endif %}
           </p>
+          {% if site.enable_contact == true %}
+          {% include contact-modal.html %}
+          {% endif %}
           {% endif %}
 
           <div class="hero-buttons">
