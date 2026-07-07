@@ -1,205 +1,157 @@
 ---
-layout: inner
+layout: page
 title: About
 permalink: /about/
 ---
-## Markdown
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
-
-[Link to another page](/index.html).
-
-There should be whitespace between paragraphs.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-{% highlight js %}
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
+<style>
+.about-shell {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 0 40px;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
 }
-{% endhighlight %}
-
-{% highlight ruby %}
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-{% endhighlight %}
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
----
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Wide image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-{% highlight txt %}
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-{% endhighlight %}
-
-{% highlight txt %}
-The final element.
-{% endhighlight %}
-
----
-
-## Syntax highlighting
-
-Jekyll has [built in support](https://jekyllrb.com/docs/templates/#code-snippet-highlighting) for syntax highlighting of over 60 languages thanks to [Rouge](http://rouge.jneen.net/).
-
-To render a code block with syntax highlighting, surround your code as follows:
-
-{% highlight markdown %}
-{% raw %}
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
-{% endraw %}
-{% endhighlight %}
-
-[Pygments](http://pygments.org/) styles are present under section 6.0 of `css/style.scss` for customization.
-
-### Examples
-
----
-
-#### Bash
-
-{% highlight bash %}
->_ ssh -i ~/.ssh/id_rsa account@host.com
-account@host:~$
-$ var="my-value"
-$ echo $var
-my-value
-$ logout
-{% endhighlight %}
-
-#### HTML
-
-{% highlight html %}
-<!DOCTYPE html>
-<html>
- <head>
-   <meta charset="UTF-8">
-   <title>title</title>
- </head>
- <body>
-
- </body>
-</html>
-{% endhighlight %}
-
-#### CSS
-
-{% highlight css %}
-/*--------------------------------------------------------------
-	1.0 Defaults
---------------------------------------------------------------*/
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
+.about-hero {
+  padding: 34px 0 28px;
+  border-bottom: 1px solid #ececec;
+  margin-bottom: 24px;
 }
-
-body {
-  background-color: #e9edf0;
-  @extend %opensans;
-  -webkit-font-smoothing: antialiased;
+.about-hero .eyebrow {
+  font-size: 0.82rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #7c3aed;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
-{% endhighlight %}
+.about-hero h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #1f2937;
+  line-height: 1.3;
+}
+.about-hero p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #6b7280;
+  margin-bottom: 0;
+}
+.about-meta {
+  margin-top: 16px;
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+.about-card {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 16px;
+  padding: 20px 22px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+}
+.about-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+.about-card p,
+.about-card li {
+  color: #6b7280;
+  line-height: 1.75;
+  font-size: 1rem;
+}
+.about-links {
+  margin-top: 14px;
+}
+.about-links a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #656566;
+  text-decoration: none;
+  font-weight: 600;
+}
+.about-links a:hover {
+  text-decoration: underline;
+}
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+.tag-list span {
+  background: #f3f4f6;
+  color: #6b7280;
+  border: 1px solid #e5e7eb;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+}
+.timeline {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.timeline li {
+  padding: 8px 0 8px 0;
+  border-bottom: 1px solid #f3f3f3;
+}
+.timeline li:last-child {
+  border-bottom: none;
+}
+.timeline strong {
+  color: #333;
+}
+</style>
 
-#### YAML
+<div class="about-shell">
+  <section class="about-hero">
+    <p class="eyebrow">about me</p>
+    <h2>Database & Data Engineer </h2>
+    <h5>
+      데이터 엔지니어로 일하면서, 숫자와 시스템보다 그 안에서 실제로 어떤 불편이 생기고, 어떤 흐름이 중요한지 늘 고민해 왔습니다. 
+      금융·공공 데이터 환경에서 DW 설계, 운영, 성능 개선을 경험하고, 자동화와 AI 관제 같은 영역으로 확장해가고 있습니다. </h5>
+    <p class="about-meta"></p>
+    <!--
+    <div class="about-links">
+      <a href="mailto:zerokhha@gmail.com">Email</a>
+      <a href="https://github.com/zerokhha" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    -->
+  </section>
+<!--
+  <div class="about-card">
+    <h3></h3>
+    <p>
+      기술은 수단이라고 생각해요. 진짜 중요한 건 문제가 뭔지 정확히 보고,
+      그걸 해결하는 과정에서 팀과 함께 하는 거예요.
+      안정적인 데이터 기반이 있으면, 모두의 일이 한결 수월해진다고 믿습니다. 
+    </p>
+  </div>
+  -->
 
-{% highlight yaml %}
-### Phantom settings
-paginate: 10
-footer_text: '© 2018 Jami Gibbs'
-admin_name: 'Jami Gibbs'
-google_analytics: "UA-9999999-99" # Update with your own tracking ID
+  <div class="about-card">
+    <h3>Skills</h3>
+    <div class="tag-list">
+      <span>대용량 DW</span>
+      <span>성능 최적화</span>
+      <span>운영 자동화</span>
+      <span>데이터 관제</span>
+      <span>AI 활용</span>
+      <span>시스템 안정성</span>
+    </div>
+  </div>
 
-#### Phantom Navigation menu
-enable_nav: true
-nav_item:
-  - { url: '/', text: 'Home' }
-  - { url: '/about', text: 'About' }
-{% endhighlight %}
+  <div class="about-card">
+    <h3>Carrer</h3>
+    <ul class="timeline">
+      <li><strong>2021.03 - 현재</strong><br />금융권 DW 운영 컨설팅</li>
+      <li><strong>2023.03 - 2024.06</strong><br />금융권 통합 DW 구축</li>
+      <li><strong>2025.01 - 2025.05</strong><br />금융권 정보계 DW 성능 개선</li>
+      <li><strong>2022.03 - 2022.06</strong><br />공공기관 빅데이터 분석 인프라 확대</li>
+    </ul>
+  </div>
+</div>
