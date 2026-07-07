@@ -69,7 +69,7 @@ permalink: /about/
 .about-links a {
   display: inline-block;
   margin-right: 10px;
-  color: #656566;
+  color: #7c3aed;
   text-decoration: none;
   font-weight: 600;
 }
@@ -103,38 +103,38 @@ permalink: /about/
   border-bottom: none;
 }
 .timeline strong {
-  color: #333;
+  color: #1f2937;
 }
 </style>
 
 <div class="about-shell">
   <section class="about-hero">
     <p class="eyebrow">about me</p>
-    <h2>Database & Data Engineer </h2>
-    <h5>
-      데이터 엔지니어로 일하면서, 숫자와 시스템보다 그 안에서 실제로 어떤 불편이 생기고, 어떤 흐름이 중요한지 늘 고민해 왔습니다. 
-      금융·공공 데이터 환경에서 DW 설계, 운영, 성능 개선을 경험하고, 자동화와 AI 관제 같은 영역으로 확장해가고 있습니다. </h5>
-    <p class="about-meta"></p>
-    <!--
+    <h2>Database & Data Engineer</h2>
+    <p>
+      데이터 엔지니어로 일하면서, 숫자와 시스템보다 그 안에서 실제로 어떤 불편이 생기고, 어떤 흐름이 중요한지 늘 고민해 왔습니다.
+    </p>
+    <p class="about-meta">
+      금융·공공 데이터 환경에서 DW 설계, 운영, 성능 개선을 경험했고,
+      이제는 자동화와 AI 관제 같은 영역까지 자연스럽게 확장해가고 있습니다.
+    </p>
     <div class="about-links">
       <a href="mailto:zerokhha@gmail.com">Email</a>
       <a href="https://github.com/zerokhha" target="_blank" rel="noopener">GitHub</a>
     </div>
-    -->
   </section>
-<!--
+
   <div class="about-card">
-    <h3></h3>
+    <h3>지향하는 것</h3>
     <p>
       기술은 수단이라고 생각해요. 진짜 중요한 건 문제가 뭔지 정확히 보고,
       그걸 해결하는 과정에서 팀과 함께 하는 거예요.
-      안정적인 데이터 기반이 있으면, 모두의 일이 한결 수월해진다고 믿습니다. 
+      안정적인 데이터 기반이 있으면, 모두의 일이 한결 수월해진다고 믿습니다.
     </p>
   </div>
-  -->
 
   <div class="about-card">
-    <h3>Skills</h3>
+    <h3>관심사</h3>
     <div class="tag-list">
       <span>대용량 DW</span>
       <span>성능 최적화</span>
@@ -146,7 +146,7 @@ permalink: /about/
   </div>
 
   <div class="about-card">
-    <h3>Carrer</h3>
+    <h3>경험해온 것들</h3>
     <ul class="timeline">
       <li><strong>2021.03 - 현재</strong><br />금융권 DW 운영 컨설팅</li>
       <li><strong>2023.03 - 2024.06</strong><br />금융권 통합 DW 구축</li>
