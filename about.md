@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+<!-- Last updated: 2026-07-07 -->
+
 <style>
 .about-shell {
   max-width: 1000px;
