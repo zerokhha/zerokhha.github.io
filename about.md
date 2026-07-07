@@ -71,7 +71,7 @@ permalink: /about/
 .about-links a {
   display: inline-block;
   margin-right: 10px;
-  color: #7c3aed;
+  color: #5d5d5e;
   text-decoration: none;
   font-weight: 600;
 }
@@ -127,16 +127,10 @@ permalink: /about/
   </section>
 
   <div class="about-card">
-    <h3>지향하는 것</h3>
-    <p>
-      기술은 수단이라고 생각해요. 진짜 중요한 건 문제가 뭔지 정확히 보고,
-      그걸 해결하는 과정에서 팀과 함께 하는 거예요.
-      안정적인 데이터 기반이 있으면, 모두의 일이 한결 수월해진다고 믿습니다.
-    </p>
   </div>
 
   <div class="about-card">
-    <h3>관심사</h3>
+    <h3>Skills</h3>
     <div class="tag-list">
       <span>대용량 DW</span>
       <span>성능 최적화</span>
