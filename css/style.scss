@@ -400,6 +400,69 @@ button.btn, input.btn {
   margin-top: 0.5em;
 }
 
+/*--------------------------------------------------------------
+  Work card (callout) styles
+--------------------------------------------------------------*/
+.work-card{
+  background:#ffffff;
+  border-left:4px solid #2b6cb0;
+  padding:18px;
+  margin:18px 0;
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+  border-radius:6px;
+}
+.work-card__meta{font-size:13px;color:#6b7280;margin-bottom:8px}
+.work-card__title{margin:0 0 8px;font-size:20px;color:#1f2937}
+.work-card__lede{margin:0;color:#374151;font-weight:600}
+.work-card__metrics{display:flex;gap:16px;margin-top:12px}
+.metric{display:flex;flex-direction:column;align-items:flex-start}
+.metric__num{font-size:18px;font-weight:700;color:#e53e3e}
+.metric__label{font-size:13px;color:#4b5563}
+
+@include bp-xsmall {
+  .work-card{padding:14px}
+  .work-card__metrics{flex-direction:column;gap:8px}
+}
+
+/* Post section variants (Background / Action / Result) */
+.post-section{
+  background: #ffffff;
+  border-left: 4px solid rgba(43, 108, 176, 0.12);
+  padding: 18px 20px;
+  margin: 18px 0;
+  border-radius:6px;
+}
+.post-section h3{
+  margin-top:0;
+  font-size:1.25em;
+  color:#123;
+  margin-bottom:0.5em;
+}
+.post-section--background{ border-left-color:#f6ad55; }
+.post-section--action{ border-left-color:#63b3ed; }
+.post-section--result{ border-left-color:#9ae6b4; }
+
+.post-section--action h4{
+  margin-top:1em;
+  margin-bottom:0.4em;
+  padding-left:0.5em;
+  border-left:3px solid #63b3ed;
+}
+
+.post-section ul{ margin-left:1.15em; color:#3a4448; line-height:1.8 }
+.post-section strong{ color:#153243 }
+
+/* result emphasis */
+.post-section--result{ background: linear-gradient(180deg, #ffffff 0%, #f7fffb 100%); }
+.post-section--result .metric{display:inline-block;margin-right:18px}
+
+@include bp-xsmall {
+  .post-section{padding:14px}
+}
+
+/* Summary (TL;DR) style removed for detail posts */
+/* If needed later, reintroduce a simpler rule here. */
+
 /* Work item link colors */
 .work-list .work-item .work-title a,
 .work-list .work-item .work-title a:link,

@@ -11,6 +11,22 @@ period: "2026.05 - "
 
 ---
 
+<!-- callout-start -->
+<div class="work-card">
+	<div class="work-card__meta">
+		<span class="period">2026.05 -</span>
+		<span class="tech">Python · Binance API · Redis</span>
+	</div>
+	<h2 class="work-card__title">Binance API 기반 미니 데이터 파이프라인 구축</h2>
+	<p class="work-card__lede">Binance API로 실시간 거래 데이터를 수집·정제해 안정적인 파이프라인을 구축했습니다.</p>
+	<div class="work-card__metrics">
+		<div class="metric"><div class="metric__num">Real-time</div><div class="metric__label">데이터 수집</div></div>
+		<div class="metric"><div class="metric__num">ETL</div><div class="metric__label">전처리·적재</div></div>
+	</div>
+</div>
+<!-- callout-end -->
+
+
 ### Tech Stacks
 * **Language:** Python
 * **Data Sources:** Binance API (REST / WebSocket)
@@ -25,9 +41,17 @@ period: "2026.05 - "
 * 바이낸스에서 제공하는 API 가이드를 분석하여 실시간 시세 및 거래 대금 데이터를 안정적으로 호출하는 수집 스크립트 구현
 * API Rate Limit(호출 제한)을 초과하지 않도록 예외 처리 및 백오프(Back-off) 로직 적용
 
+<div class="post-step" markdown="1">
+#### 1. Binance API를 통한 데이터 수집 (Part 01)
+* 바이낸스에서 제공하는 API 가이드를 분석하여 실시간 시세 및 거래 대금 데이터를 안정적으로 호출하는 수집 스크립트 구현
+* API Rate Limit(호출 제한)을 초과하지 않도록 예외 처리 및 백오프(Back-off) 로직 적용
+</div>
+
+<div class="post-step" markdown="1">
 #### 2. 데이터 전처리 및 적재 파이프라인 구성 (Part 02)
 * 수집된 raw JSON 데이터를 분석에 용이한 스키마 구조로 파싱 및 정제(Data Cleansing)
 * 대용량 데이터 유실을 방지하기 위한 안정적인 데이터 파이프라인 설계 및 타겟 저장소 적재 완료
+</div>
 
 ---
 

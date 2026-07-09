@@ -15,6 +15,22 @@ excerpt: "기존 분석 시스템의 성능 및 확장성 한계를 극복하기
 
 ---
 
+<!-- callout-start -->
+<div class="work-card">
+	<div class="work-card__meta">
+		<span class="period">2022.03 - 2022.06</span>
+		<span class="tech">SQL · Shell Script · RBAC</span>
+	</div>
+	<h2 class="work-card__title">공공기관 빅데이터 분석 인프라 확대</h2>
+	<p class="work-card__lede">신규 DBMS 도입 및 마이그레이션 자동화로 마이그레이션 작업의 90% 이상을 자동화하고 보안·거버넌스를 강화했습니다.</p>
+	<div class="work-card__metrics">
+		<div class="metric"><div class="metric__num">90%</div><div class="metric__label">마이그레이션 자동화</div></div>
+		<div class="metric"><div class="metric__num">50%</div><div class="metric__label">구축 기간 단축</div></div>
+	</div>
+</div>
+<!-- callout-end -->
+
+
 ### 배경 및 과제 (Background)
 * **신규 DBMS 도입 및 마이그레이션 필요:** 조직 내 빅데이터 분석 수요 증가로 인해 기존 시스템의 성능 및 확장성 한계를 극복하고자 신규 DBMS 도입 추진
 * **수작업으로 인한 리스크:** 기존 환경의 수작업 기반 객체 생성 방식으로 인해 작업 오류 및 일관성 부족 문제 빈번히 발생
@@ -29,10 +45,19 @@ excerpt: "기존 분석 시스템의 성능 및 확장성 한계를 극복하기
 * 사용자 유형(Sandbox 사용자, 운영자 등)별로 역할(Role)을 정의하고 접근 권한을 명확히 설정하는 **RBAC 기반 권한 관리 체계** 구축
 * 스키마 단위로 사용자를 격리하여 업무 단위별 보안 경계를 확보하고 오남용 및 유출 리스크 방지
 
+<div class="post-step" markdown="1">
+#### 1. 신규 DBMS 환경 구축 및 최적화
+* 신규 DBMS 설치 및 초기 분석 환경 구성 (DB 초기 구조 설계, 사용자 및 스키마 생성)
+* 사용자 유형(Sandbox 사용자, 운영자 등)별로 역할(Role)을 정의하고 접근 권한을 명확히 설정하는 **RBAC 기반 권한 관리 체계** 구축
+* 스키마 단위로 사용자를 격리하여 업무 단위별 보안 경계를 확보하고 오남용 및 유출 리스크 방지
+</div>
+
+<div class="post-step" markdown="1">
 #### 2. 수작업 마이그레이션 자동화 체계 설계
 * 기존 수작업 방식의 DDL 생성/배포 프로세스를 자동화 가능한 로직으로 전면 전환
 * 신규 DBMS의 데이터 타입 특성에 따라 `NCHAR`/`NVARCHAR`의 저장 공간 요구량을 반영해, **자동 사이징 로직(1.5배)**을 포함한 DDL 변환 규칙 구현
 * Shell Script 기반으로 *DDL 변환 $\rightarrow$ 테이블 생성 $\rightarrow$ 권한 부여*까지 일괄 처리하는 스크립트 작성 및 배포
+</div>
 
 ---
 

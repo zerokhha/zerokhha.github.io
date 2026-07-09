@@ -15,6 +15,22 @@ excerpt: "이원화 DW > ONE DW 구축"
 
 ---
 
+
+<!-- callout-start -->
+<div class="work-card">
+  <div class="work-card__meta">
+    <span class="period">2023.03 - 2024.06</span>
+    <span class="tech">SQL · Shell · Python · Kafka · Grafana</span>
+  </div>
+  <h2 class="work-card__title">금융권 통합 DW 구축</h2>
+  <p class="work-card__lede">도메인 기반 DW 재구축과 Kafka 스트리밍 연계를 통해 실시간 분석과 배치 성능을 개선했습니다.</p>
+  <div class="work-card__metrics">
+    <div class="metric"><div class="metric__num">70%</div><div class="metric__label">배치 시간 단축</div></div>
+    <div class="metric"><div class="metric__num">30%</div><div class="metric__label">실시간 활용도 증가</div></div>
+  </div>
+</div>
+<!-- callout-end -->
+
 ### 배경 및 과제 (Background)
 * **DW 구조적 한계 및 도메인 미분리:** 기존 DW가 단일 스키마 체계로 운영되어 업무 도메인 구분이 미흡했고, 이로 인한 데이터 중복 및 충돌 문제 발생
 * **성능 및 확장성 부족:** 실시간 분석 수요는 점차 증가하는 반면, 기존 시스템의 대용량 배치 처리 성능 한계로 인해 시스템 전반의 유연성과 확장성이 결여됨
@@ -24,9 +40,13 @@ excerpt: "이원화 DW > ONE DW 구축"
 
 ### 해결 과정 (Action)
 
+
+<div class="post-step" markdown="1">
 #### 1. 도메인 기반 DW 구조 설계 
 * DW를 공통, 마케팅, 카드, 리스크, 자동세탁방지 등 주요 업무 도메인별로 분리하고 각 특성에 맞는 독립적 스키마 구조 자립화
+</div>
 
+<div class="post-step" markdown="1">
 #### 2. Kafka 파이프라인 구현
 * Kafka에서 실시간 수집된 JSON 로그 데이터를 DBMS 내장 함수로 파싱하여 임시 테이블에 적재하고, 필드 누락 및 중복 제어를 위한 전처리 로직 자동화 구축
 
@@ -35,11 +55,15 @@ excerpt: "이원화 DW > ONE DW 구축"
   <br>
   <em><small>▲ Kafka 스트리밍 연계 및 차세대 DW 구조</small></em>
 </p>
+</div>
 
+<div class="post-step" markdown="1">
 #### 3. 대용량 쿼리 튜닝
 * 고비용 SQL 튜닝을 통해 로직 리팩토링 수행 (`NOT IN`, `NOT EXISTS` 전환, 윈도우 함수 `MIN`/`MAX` 최적화 구조 변경) 및 자주 활용되는 컬럼 중심의 테이블 재구조화
 * 대량 `UPDATE` 성능 병목을 해소하기 위해 임시 테이블을 활용한 일괄 적재(Bulk Load) 방식으로 대용량 처리 기법 최적화
+</div>
 
+<div class="post-step" markdown="1">
 #### 4. Grafana 모니터링 체계 구축
 <p align="center">
   <img src="{{ site.baseurl }}/img/posts/Grafana.png" alt="Vertica Monitoring" width="100%" style="max-width: 800px; border: 1px solid #ddd; border-radius: 8px;">
@@ -47,8 +71,8 @@ excerpt: "이원화 DW > ONE DW 구축"
   <em><small>▲ Grafana 대시 보드 연계 구조</small></em>
 </p>
 
-
 * Python과 가벼운 스크립트를 활용해 시스템 자원(CPU, Memory, Disk) 및 쿼리 실행 지표를 실시간 수집하고, **Grafana 대시보드**를 통해 이상 징후 조기 탐지 및 시각화 환경 구현
+</div>
 
 ---
 

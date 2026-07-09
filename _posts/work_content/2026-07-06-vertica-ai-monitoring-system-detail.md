@@ -29,13 +29,25 @@ period: "2026.05 - "
 * **Daily View:** 일간 스토리지 적재 추이, Delete Vector / 통계 최신화 / Tuple Mover 상태 관리, 배치 분포 및 미인가 IP 체크
 * **Monthly View:** 월간 용량 고갈 예측 알고리즘, Data Skew(편중 현상) 분석, Projection 재구성 및 ILM 대상 테이블 식별
 
+<div class="post-step" markdown="1">
+#### 1. Vertica 특화 다차원 관제 화면 구성 (Dash)
+단순 실시간 조회를 넘어 Vertica 운영 주기에 맞춘 3가지 뷰(View)를 제공합니다.
+* **Real-time View:** 액티브 세션 및 쿼리 큐 대기 추이, Resource Pool, Spread Retrans 상태, Lock Wait TOP 10 모니터링
+* **Daily View:** 일간 스토리지 적재 추이, Delete Vector / 통계 최신화 / Tuple Mover 상태 관리, 배치 분포 및 미인가 IP 체크
+* **Monthly View:** 월간 용량 고갈 예측 알고리즘, Data Skew(편중 현상) 분석, Projection 재구성 및 ILM 대상 테이블 식별
+</div>
+
+<div class="post-step" markdown="1">
 #### 2. 장애 이력 기반 피드백 루프 구축 (Context-Aware AI Diagnosis)
 * **자동 장애 감지:** 백엔드 스케줄러가 리포트를 주기적으로 분석하여 LOCK WAIT, Retrans Spread Events 등 위험 임계치 초과 시 자동 Alert 발동
 * **자가 학습 구조:** 감지된 장애와 AI 조치안을 SQLite에 적재합니다. 차후 AI 진단 시 과거 장애 이력을 프롬프트 텍스트에 동적으로 포함하여, 반복 장애에 대해 더 정밀하고 연속성 있는 맥락 기반 솔루션을 출력하도록 구현했습니다.
+</div>
 
+<div class="post-step" markdown="1">
 #### 3. Telegram ChatOps를 통한 원격 모바일 대응
 * 사용자가 모바일에서 `/diagnose` 또는 `/진단` 명령을 전송하면 백엔드 내부 폴링 스레드가 이를 수신합니다.
-* 즉시 OpenAI API를 호출하여 현재 DW 상태 요약과 조치 가이드를 메신저로 즉시 회신하는 환경을 구축했습니다.
+* 즉시 OpenAI API를 호출하여 현재 DW 상태 요약과 조치 가이드를 메신저로 즉시 회신하는 환경을 구축했습니다。
+</div>
 
 ---
 
@@ -71,3 +83,18 @@ python frontend.py
   <img src="{{ site.baseurl }}/img/posts/vertica_chatbot.png" alt="Vertica AI Monitoring" width="100%" style="max-width: 500px; border: 1px solid #ddd; border-radius: 8px;">
 </p>
 ---
+
+<!-- callout-start -->
+<div class="work-card">
+  <div class="work-card__meta">
+    <span class="period">2026.05 -</span>
+    <span class="tech">Python · FastAPI · OpenAI · Dash</span>
+  </div>
+  <h2 class="work-card__title">Vertica AI 관제 및 ChatOps 시스템 구축</h2>
+  <p class="work-card__lede">Vertica 특화 모니터링과 ChatOps를 결합해 이상징후 탐지와 대응을 자동화했습니다.</p>
+  <div class="work-card__metrics">
+    <div class="metric"><div class="metric__num">AI</div><div class="metric__label">관제 자동화</div></div>
+    <div class="metric"><div class="metric__num">ChatOps</div><div class="metric__label">원격 대응</div></div>
+  </div>
+</div>
+<!-- callout-end -->
