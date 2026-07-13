@@ -7,7 +7,7 @@ categories: work
 slug: eonmode-project
 tags: ''
 featured_image: ''
-project_link: '/work/eonmode-detail/'
+project_link: '/work/eonmode-project/'
 button_icon: ''
 button_text: 'Read More'
 lead_text: '2021.06 - 2021.10'

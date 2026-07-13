@@ -2,7 +2,7 @@
 layout: inner
 title: "Binance API 기반 미니 데이터 파이프라인 구축"
 date: 2026-07-06 00:00:00 +0900
-permalink: /work/binance-mini-detail/
+permalink: /work/binance-mini-project/
 period: "2026.05 - "
 excerpt: "Binance API로 실시간 암호화폐 거래 데이터를 수집하고 정제·적재하는 미니 데이터 파이프라인을 구축했습니다."
 ---

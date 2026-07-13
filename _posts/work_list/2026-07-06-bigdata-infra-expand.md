@@ -6,7 +6,7 @@ date: 2026-07-06 02:00:00 +0900
 categories: work
 tags: ''
 featured_image: ''
-project_link: '/work/bigdata-infra-expand-detail/'
+project_link: '/work/bigdata-infra-expand/'
 button_icon: ''
 button_text: 'Read More'
 lead_text: '2022.03 - 2022.06'

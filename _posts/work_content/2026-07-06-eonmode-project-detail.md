@@ -2,7 +2,7 @@
 layout: inner
 title: "금융권 비즈니스 업무 이관"
 date: 2026-07-06 00:00:00 +0900
-permalink: /work/eonmode-detail/
+permalink: /work/eonmode-project/
 period: "2021.06 - 2021.10"
 excerpt: "Hadoop 내 대규모 분석 데이터를 Vertica로 이관하기 위한 병렬 적재 아키텍처 설계와 자동화 프로세스를 구축했습니다."
 ---

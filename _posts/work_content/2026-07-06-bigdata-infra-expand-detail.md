@@ -2,7 +2,7 @@
 layout: inner
 title: "공공기관 빅데이터 분석 인프라 확대"
 date: 2026-07-06 02:00:00 +0900
-permalink: /work/bigdata-infra-expand-detail/
+permalink: /work/bigdata-infra-expand/
 period: "2022.03 - 2022.06"
 excerpt: "기존 분석 시스템의 성능 및 확장성 한계를 극복하기 위해 신규 DBMS 도입과 자동화된 마이그레이션 체계를 구축했습니다."
 ---

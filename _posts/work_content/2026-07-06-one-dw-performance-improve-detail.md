@@ -2,7 +2,7 @@
 layout: inner
 title: "금융권 정보계 DW 성능 개선"
 date: 2026-07-06 04:00:00 +0900
-permalink: /work/one-dw-performance-improve-detail/
+permalink: /work/one-dw-performance-improve/
 period: "2025.01 - 2025.05"
 excerpt: "대용량 테이블 조회 시 발생하는 디스크 I/O 병목을 해결하고, 자원 과점유 비정형 쿼리를 실시간으로 탐지해 자동 제어하는 인프라 최적화 프로세스를 구축했습니다."
 ---

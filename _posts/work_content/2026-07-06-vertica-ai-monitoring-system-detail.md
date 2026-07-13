@@ -2,7 +2,7 @@
 layout: inner
 title: "Vertica AI 관제 및 ChatOps 시스템 구축"
 date: 2026-07-06 00:00:00 +0900
-permalink: /work/vertica-ai-monitoring-detail/
+permalink: /work/vertica-ai-monitoring-system/
 period: "2026.05 - "
 excerpt: "Vertica 특화 대시보드와 AI 기반 ChatOps를 결합해 운영 지표 자동화와 장애 대응을 지원하는 관제 시스템을 구축했습니다."
 ---

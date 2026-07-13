@@ -2,7 +2,7 @@
 layout: inner
 title: "금융권 분석계 DW 구축 PoC"
 date: 2026-07-06 03:00:00 +0900
-permalink: /work/analyst-dbms-one-poc-detail/
+permalink: /work/analyst-dbms-one-poc/
 period: "2022.07 - 2022.07"
 excerpt: "기존 분석 시스템의 성능 및 확장성 한계를 극복하기 위한 신규 DBMS 도입 구축"
 ---

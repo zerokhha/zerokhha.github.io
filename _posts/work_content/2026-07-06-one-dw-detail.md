@@ -2,7 +2,7 @@
 layout: inner
 title: "금융권 통합 DW 구축"
 date: 2026-07-06 03:00:00 +0900
-permalink: /work/one-dw-detail/
+permalink: /work/one-dw/
 period: "2023.03 - 2024.06"
 excerpt: "이원화 DW를 통합형 ONE DW로 재구축하고 Kafka 기반 실시간 연계와 모니터링 체계를 함께 구축했습니다."
 ---
