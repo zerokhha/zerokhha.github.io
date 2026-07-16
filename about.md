@@ -112,7 +112,7 @@ permalink: /about/
 <div class="about-shell">
   <section class="about-hero">
     <p class="eyebrow">about me</p>
-    <h2>Database & Data Engineer</h2>
+    <h2>Data Engineer</h2>
     <p>
       데이터 엔지니어로 일하면서, 숫자와 시스템보다 그 안에서 실제로 어떤 불편이 생기고, 어떤 흐름이 중요한지 늘 고민해 왔습니다.
     </p>
