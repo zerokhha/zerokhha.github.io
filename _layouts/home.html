@@ -33,7 +33,7 @@
             <p class="section-subtitle text-center">Side projects and toy projects for exploration</p>
             <div class="break" style="margin-bottom: 30px;"></div>
 
-            {% assign personal_posts = site.posts | where: "categories", "personal" | where_exp: "post", "post.project_link != '/work/binance-mini-project/'" | sort: "date" | reverse %}
+            {% assign personal_posts = site.posts | where: "categories", "personal" | sort: "date" | reverse %}
             {% if personal_posts.size > 0 %}
               <div class="work-list row">
                 {% for post in personal_posts %}
