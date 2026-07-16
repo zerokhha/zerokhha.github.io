@@ -1,98 +1,78 @@
-## Phantom for Jekyll
+# ZeroKhha Portfolio (Jekyll)
 
-A minimalist, responsive portfolio theme for [Jekyll](http://jekyllrb.com/) with Bootstrap.
+개인 포트폴리오 사이트 저장소입니다.
+This repository contains ZeroKhha's personal portfolio website.
 
-![preview](preview.jpg)
+## Intro
 
-[See it in action](http://jamigibbs.github.io/phantom/).
+- KR: 안녕하세요, 저는 Data Engineer ZeroKhha입니다.
+- EN: Hello, I'm ZeroKhha, a Data Engineer.
 
-## Fancy using it for your own site?
+이 프로젝트는 Jekyll 기반으로 구성되어 있으며, 데이터 엔지니어링 프로젝트 경험을 포트폴리오 형태로 정리합니다.
+This site is built with Jekyll and presents data engineering project experience in portfolio form.
 
-Here are some steps to get you started:
+## Live Site
 
-1. Clone this repo and cd into the directory:
+- https://zerokhha.github.io
 
-  ```bash
-  git clone https://github.com/jamigibbs/phantom.git your-dir-name && cd your-dir-name
-  ```
+## Tech Stack
 
-2. Run:
+- Jekyll
+- Liquid Template
+- Sass
+- Bootstrap
+- Ruby (Bundler)
 
-  ```bash
-  gem install bundler
-  bundle install
-  bundle exec jekyll serve
-  ```
+## Project Structure
 
-  You may need to append your commands with `sudo` if you're getting a permissions error.
+- `_config.yml`: 사이트 기본 설정(제목, 설명, 메뉴, 페이지네이션)
+- `_layouts/`: 공통 레이아웃 템플릿
+- `_includes/`: 재사용 UI 조각(헤더, 푸터, 히어로 영역 등)
+- `_posts/`: 블로그 포스트
+- `_work_list/`: 프로젝트 목록 카드 데이터
+- `_work_content/`: 프로젝트 상세 페이지
+- `css/`, `_sass/`, `js/`: 스타일 및 스크립트
+- `_site/`: Jekyll 빌드 결과물(자동 생성)
 
-  _Don't have Jekyll yet? [Get `er installed then!](http://jekyllrb.com/docs/installation/)_
+## Run Locally
 
-3. Visit in your browser at:
+1. 의존성 설치 / Install dependencies
 
-  `http://127.0.0.1:4000`
-
-## Launching with Github Pages :rocket:
-
-Jekyll + Github pages is a marriage made in heaven. You can [use your own custom domain name](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/) or use the default Github url (ie. http://username.github.io/repository) and not bother messing around with DNS settings.
-
-## Theme Features
-
-### Navigation
-
-Navigation can be customized in `_config.yml` under the `nav_item` key. Default settings:
-
-```yaml
-nav_item:
-    - { url: '/', text: 'Home' }
-    - { url: '/about', text: 'About' }
+```bash
+bundle install
 ```
 
-Set the `nav_enable` variable to false in `_config.yml` to disable navigation.
+2. 로컬 서버 실행 / Start local server
 
-### Contact Form
-
-You can display a contact form within the modal window template. This template is already setup to use the [Formspree](https://formspree.io) email system. You'll just want to add your email address to the form in `/_includes/contact-modal.html`.
-
-Place the modal window template in any place you'd like the user to click for the contact form.
-The template will display a link to click for the contact form modal window:
-
-```liquid
-{% include contact.html %}
-{% include contact-modal.html %}
+```bash
+bundle exec jekyll serve
 ```
 
-### Animation Effects
+3. 브라우저 확인 / Open in browser
 
-Animations with CSS classes are baked into the theme. To animate a section or element, simply add the animation classes:
-
-```html
-<div id="about-me" class="wow fadeIn">
-  I'm the coolest!
-</div>
+```text
+http://127.0.0.1:4000
 ```
 
-For a complete list of animations, see the [animation list](http://daneden.github.io/animate.css/).
+## Content Editing Guide
 
-### Pagination
+- KR: 히어로 소개 문구는 `_config.yml`의 `description`에서 변경할 수 있습니다.
+- EN: Update the hero subtitle from `description` in `_config.yml`.
 
-By default, pagination on the home page will activate after 10 posts. You can change this within `_config.yml`. You can add the pagination to other layouts with:
+- KR: 프로젝트 목록은 `_work_list/`, 상세 내용은 `_work_content/`에서 관리합니다.
+- EN: Manage project cards in `_work_list/` and detailed project pages in `_work_content/`.
 
-```liquid
-  {% for post in paginator.posts %}
-    {% include post-content.html %}
-  {% endfor %}
+- KR: About 페이지 내용은 `about.md`에서 수정합니다.
+- EN: Update the About page in `about.md`.
 
-  {% include pagination.html %}
-```
+## Deployment
 
-Read more about the [pagination plugin](http://jekyllrb.com/docs/pagination/).
+- KR: GitHub Pages 기반으로 배포됩니다.
+- EN: The site is deployed via GitHub Pages.
 
-## Credit
+## Credits
 
-* Bootstrap, http://getbootstrap.com/, (C) 2011 - 2016 Twitter, Inc., [MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE)
-
-* Wow, https://github.com/matthieua/WOW, (C) 2014 - 2016 Matthieu Aussaguel
-, [GPL](https://github.com/matthieua/WOW#open-source-license)
-
-* Animate.css, https://github.com/daneden/animate.css, (C) 2016 Daniel Eden, [MIT](https://github.com/daneden/animate.css/blob/master/LICENSE)
+- Phantom theme base by jami-gibbs/phantom
+- Bootstrap
+- Animate.css
+- WOW.js
