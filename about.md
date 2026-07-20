@@ -140,6 +140,7 @@ permalink: /about/
     <div class="about-links">
       <a href="mailto:zerokhha@gmail.com">Email</a>
       <a href="https://github.com/zerokhha" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/kim-hayoung-1a170634a" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </section>
 
