@@ -16,7 +16,7 @@ excerpt: "Vertica 기반 금융권 DW의 장기 운영을 지원하며 대용량
   <h2 class="work-card__title">금융권 DW 운영 컨설팅</h2>
   <p class="work-card__lede">장기 운영 환경에서 데이터 인프라의 확장성, 성능, 안정성을 동시에 관리하기 위한 기술 컨설팅과 운영 고도화를 수행했습니다.</p>
   <div class="work-card__metrics">
-    <div class="metric"><div class="metric__num">2PB</div><div class="metric__label">안정적 확장 규모</div></div>
+    <div class="metric"><div class="metric__num">TB > PB</div><div class="metric__label">안정적 확장 규모</div></div>
     <div class="metric"><div class="metric__num">3X</div><div class="metric__label">클러스터 자원 증설</div></div>
   </div>
 </div>
