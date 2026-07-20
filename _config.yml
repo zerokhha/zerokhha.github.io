@@ -18,7 +18,7 @@ email: 'zerokhha@gmail.com'
 description: "Data Engineer
 Building reliable data solutions.
 ETL Development • Data Warehouse • SQL"
-hero_title: "안녕하세요, 데이터 엔지니어 Zerokhha입니다"
+hero_title: "데이터 엔지니어 Zerokhha입니다"
 hero_subtitle: "다양한 비즈니스 환경에서 데이터 웨어하우스를 설계하고, 안정적으로 운영할 수 있는 구조를 만들어왔습니다"
 hero_intro: "Data Warehouse • SQL • ETL"
 baseurl: "" # the subpath of your site, e.g. /blog
