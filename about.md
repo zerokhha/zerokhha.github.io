@@ -102,7 +102,7 @@ permalink: /about/
   margin: 0;
 }
 .timeline li {
-  padding: 10px 0 10px 0;
+  padding: 16px 0;
   border-bottom: 1px solid #f3f3f3;
 }
 .timeline li:last-child {
@@ -110,6 +110,23 @@ permalink: /about/
 }
 .timeline strong {
   color: #1f2937;
+}
+.timeline .project-period {
+  display: block;
+  margin-bottom: 4px;
+  color: #8b97a3;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.timeline .project-name {
+  display: block;
+  color: #1f2937;
+  font-weight: 700;
+}
+.timeline .project-summary {
+  display: block;
+  margin-top: 6px;
 }
 @media (max-width: 768px) {
   .about-hero h2 {
@@ -129,13 +146,9 @@ permalink: /about/
 <div class="about-shell">
   <section class="about-hero">
     <p class="eyebrow">about me</p>
-    <h2>Data Engineer</h2>
+    <h2>일하는 방식과 경험</h2>
     <p>
-      데이터 엔지니어로 일하면서, 숫자와 시스템보다 그 안에서 실제로 어떤 불편이 생기고, 어떤 흐름이 중요한지 늘 고민해 왔습니다.
-    </p>
-    <p class="about-meta">
-      금융·공공 데이터 환경에서 DW 설계, 운영, 성능 개선을 경험했고,
-      이제는 자동화와 AI 관제 같은 영역까지 자연스럽게 확장해가고 있습니다.
+      단순히 데이터를 쌓는 데 그치지 않고, 실제 운영 환경에서 오래 활용될 수 있는 구조를 만드는 일을 중요하게 생각합니다.
     </p>
     <div class="about-links">
       <a href="mailto:zerokhha@gmail.com">Email</a>
@@ -179,12 +192,15 @@ permalink: /about/
   </div>
 
   <div class="about-card">
-    <h3>경험해온 것들</h3>
+    <h3>프로젝트</h3>
     <ul class="timeline">
-      <li><strong>2021.03 - 현재</strong><br />금융권 DW 운영 컨설팅</li>
-      <li><strong>2023.03 - 2024.06</strong><br />금융권 통합 DW 구축</li>
-      <li><strong>2025.01 - 2025.05</strong><br />금융권 정보계 DW 성능 개선</li>
-      <li><strong>2022.03 - 2022.06</strong><br />공공기관 빅데이터 분석 인프라 확대</li>
+      <li><span class="project-period">2021.03 - 현재</span><strong class="project-name">금융권 DW 운영 컨설팅</strong><span class="project-summary">Vertica 기반 대용량 DW 상시 운영·성능·안정성</span></li>
+      <li><span class="project-period">2026.04 - 2026.05</span><strong class="project-name">Vertica 신규 클러스터 구축 (AI 러닝 플랫폼)</strong><span class="project-summary">고객사 환경 현장 설치·초기 구성 · 운영 가이드 인수인계</span></li>
+      <li><span class="project-period">2025.01 - 2025.05</span><strong class="project-name">정보계 DW 성능 개선</strong><span class="project-summary">Direct Read 전환 + Auto-kill 시스템 · 악성 쿼리 자원 독점 차단 및 장애 전파 차단</span></li>
+      <li><span class="project-period">2023.03 - 2024.06</span><strong class="project-name">통합 DW 구축</strong><span class="project-summary">도메인 재설계 + MyData Kafka 준실시간 연계 · 배치 시간 70% 단축</span></li>
+      <li><span class="project-period">2022.07</span><strong class="project-name">분석계 DW 구축 PoC</strong><span class="project-summary">쿼리 리팩토링·병렬화 · 배치 50%↓ · 사업 수주 기여</span></li>
+      <li><span class="project-period">2022.03 - 2022.06</span><strong class="project-name">공공 빅데이터 인프라 확대</strong><span class="project-summary">RBAC + 마이그레이션 자동화 90% · 구축기간 50%↓</span></li>
+      <li><span class="project-period">2021.06 - 2021.10</span><strong class="project-name">비즈니스 업무 이관</strong><span class="project-summary">Hadoop→Vertica · 7TB / 4시간 이내 병렬 적재 자동화</span></li>
     </ul>
   </div>
 

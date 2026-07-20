@@ -8,23 +8,23 @@
 
         <div class="hero-content">
 
-          {% if site.title != '' %}
-          <h1 class="text-center">{{site.title}}</h1>
+          {% if site.hero_title != '' %}
+            <h1 class="text-center">{{site.hero_title}}</h1>
           {% endif %}
 
-          {% if site.description != '' or site.enable_contact == true %}
-          <p class="text-center">
-            {% if site.description != '' %}
-            {{site.description}}
+          {% if site.hero_subtitle != '' or site.hero_intro != '' or site.enable_contact == true %}
+          <p class="text-center hero-subtitle">
+              {% if site.hero_subtitle != '' %}
+              {{site.hero_subtitle}}
             {% endif %}
 
             {% if site.enable_contact == true %}
             {% include contact.html %}
             {% endif %}
           </p>
-          {% if site.description != '' %}
-          <p class="text-center hero-intro">
-            안녕하세요, 저는 금융·공공 환경에서 대용량 데이터 파이프라인과 분석 데이터 모델을 설계·구축하고, 데이터의 정합성과 처리 성능을 책임져온 데이터 엔지니어 ZeroKhha입니다.
+          {% if site.hero_intro != '' %}
+          <p class="text-center hero-tags">
+              {{site.hero_intro}}
           </p>
           {% endif %}
           {% if site.enable_contact == true %}
