@@ -9,5 +9,5 @@ featured_image: ''
 project_link: '/work/analyst-dbms-one-poc/'
 button_icon: ''
 button_text: 'Read More'
-lead_text: '2022.07-2022.07'
+lead_text: '2022.07'
 ---
