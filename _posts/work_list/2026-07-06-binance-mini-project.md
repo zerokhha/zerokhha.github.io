@@ -9,5 +9,6 @@ featured_image: ''
 project_link: '/work/binance-mini-project/'
 button_icon: ''
 button_text: 'Read More'
+summary_en: 'Built a lightweight Binance data pipeline for market data collection and processing.'
 lead_text: '2026.05 - '
 ---

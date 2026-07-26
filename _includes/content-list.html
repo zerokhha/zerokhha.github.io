@@ -4,6 +4,9 @@
     {% assign work_link = post.url %}
   {% endif %}
   <h3 class="work-title"><a href="{{ work_link | relative_url }}">{{ post.title }}</a></h3>
+  {% if post.summary_en %}
+    <p class="work-summary-en">{{ post.summary_en }}</p>
+  {% endif %}
   {% if post.lead_text %}
     <p class="work-lead">{{ post.lead_text }}</p>
   {% endif %}

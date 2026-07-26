@@ -10,5 +10,6 @@ featured_image: ''
 project_link: '/work/eonmode-project/'
 button_icon: ''
 button_text: 'Read More'
+summary_en: 'Managed a financial business handover and operational transition.'
 lead_text: '2021.06 - 2021.10'
 ---

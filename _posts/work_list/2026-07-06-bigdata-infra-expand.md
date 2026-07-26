@@ -9,5 +9,6 @@ featured_image: ''
 project_link: '/work/bigdata-infra-expand/'
 button_icon: ''
 button_text: 'Read More'
+summary_en: 'Expanded a public-sector big data analytics platform for scalable reporting.'
 lead_text: '2022.03 - 2022.06'
 ---

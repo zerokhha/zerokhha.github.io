@@ -9,5 +9,6 @@ featured_image: ''
 project_link: '/work/one-dw-consulting/'
 button_icon: ''
 button_text: 'Read More'
+summary_en: 'Provided DW operations consulting and stabilization support for a financial platform.'
 lead_text: '2021.03 - '
 ---
