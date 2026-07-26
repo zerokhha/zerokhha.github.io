@@ -16,7 +16,7 @@ excerpt: "이원화 DW를 통합형 ONE DW로 재구축하고 Kafka 기반 실�
   <h2 class="work-card__title">금융권 통합 DW 구축</h2>
   <p class="work-card__lede">도메인 중심 DW 재설계와 Kafka 스트리밍 파이프라인 구축을 통해 준실시간 데이터 분석 환경을 구현하고, 대용량 배치 처리 및 쿼리 성능을 개선했습니다."</p>
   <div class="work-card__metrics">
-    <div class="metric"><div class="metric__num">70%</div><div class="metric__label">배치 시간 단축</div></div>
+    <div class="metric"><div class="metric__num">40분 > 8분</div><div class="metric__label">배치 시간 단축</div></div>
     <div class="metric"><div class="metric__num">30%</div><div class="metric__label">실시간 활용도 증가</div></div>
   </div>
 </div>
@@ -80,6 +80,6 @@ excerpt: "이원화 DW를 통합형 ONE DW로 재구축하고 Kafka 기반 실�
 ### 성과 (Result)
 * **데이터 거버넌스 명확화:** 도메인 중심 DW 재구축을 통해 데이터 표준과 관리 기준을 수립하고 고질적인 데이터 중복·충돌 문제를 해소했습니다.
 * **실시간 데이터 활용도 30% 증가:** Kafka 기반 스트리밍 연계 도입으로 데이터 활용 시점 지연을 줄여 비즈니스 분석 인사이트를 더 빠르게 제공했습니다.
-* **배치 처리 시간 70% 단축:** 효율적인 SQL 튜닝과 데이터 재구조화를 통해 대용량 데이터 적재 안정성과 운영 효율성을 크게 높였습니다.
+* **배치 처리 시간 40분 > 8분:** 효율적인 SQL 튜닝과 데이터 재구조화를 통해 대용량 데이터 적재 안정성과 운영 효율성을 크게 높였습니다.
 * **이상 징후 조치 탐지:** Grafana 관제로 장애 인지 및 전파 속도 최적화 했습니다.
 </section>
