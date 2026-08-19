@@ -1,7 +1,7 @@
 ---
 layout: inner
 position: left
-title: "[성능 비교] Spark(AWS) vs Vertica(On-Premise) 6천만 건 데이터 튜닝기"
+title: "[성능 비교] Spark(AWS) vs Vertica(On-Premise)"
 date: 2026-08-19 09:00:00 +0900
 categories: personal
 slug: spark-vertica-performance
