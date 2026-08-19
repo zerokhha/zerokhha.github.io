@@ -1,7 +1,7 @@
 ---
 layout: inner
 title: "[성능 비교] Spark(AWS) vs Vertica(On-Premise) 6천만 건 데이터 튜닝기"
-date: 2026-08-20 09:00:00 +0900
+date: 2026-08-19 09:00:00 +0900
 permalink: /work/spark-vertica-performance/
 period: "2026.08"
 excerpt: "NYC 택시 6,099만 건을 기준으로 Spark와 Vertica의 집계 및 조인 성능을 비교하고, 셔플과 네트워크 이동을 줄이는 방식으로 튜닝한 기록입니다."
