@@ -1,7 +1,7 @@
 ---
 layout: inner
 position: left
-title: "금융권 정보계 DW 성능 개선"
+title: "금융권 통합 DW 성능 개선"
 date: 2026-07-06 05:00:00 +0900
 categories: work
 tags: ''

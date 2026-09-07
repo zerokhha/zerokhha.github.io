@@ -1,6 +1,6 @@
 ---
 layout: inner
-title: "금융권 빅데이터 분석 DW 구축"
+title: "금융권 빅데이터 분석 신규 DW 구축"
 date: 2026-07-06 02:00:00 +0900
 permalink: /work/bigdata-infra-expand/
 period: "2022.03 - 2022.06"
@@ -13,7 +13,7 @@ excerpt: "기존 분석 시스템의 성능 및 확장성 한계를 극복하기
 		<span class="period">2022.03 - 2022.06</span>
 		<span class="tech">SQL · Shell Script · RBAC</span>
 	</div>
-	<h2 class="work-card__title">금융권 빅데이터 분석 DW 구축</h2>
+	<h2 class="work-card__title">금융권 빅데이터 분석 신규 DW 구축</h2>
 	<p class="work-card__lede">신규 DBMS 도입과 자동화된 마이그레이션 체계를 통해 분석 인프라의 확장성과 보안성을 동시에 강화했습니다.</p>
 	<div class="work-card__metrics">
 		<div class="metric"><div class="metric__num">90%</div><div class="metric__label">마이그레이션 자동화</div></div>

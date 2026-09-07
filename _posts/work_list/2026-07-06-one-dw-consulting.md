@@ -1,7 +1,7 @@
 ---
 layout: inner
 position: left
-title: "금융권 DW 운영 컨설팅 "
+title: "금융권 DW 플랫폼 엔지니어링 및 엔진 최적화 "
 date: 2026-07-06 07:00:00 +0900
 categories: work
 tags: ''
