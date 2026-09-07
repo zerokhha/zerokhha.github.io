@@ -1,6 +1,6 @@
 ---
 layout: inner
-title: "금융권 DW 운영 컨설팅"
+title: "금융권 DW 플랫폼 엔지니어링 및 엔진 최적화"
 date: 2026-07-06 07:00:00 +0900
 permalink: /work/one-dw-consulting/
 period: "2021.03 - 현재"
@@ -13,7 +13,7 @@ excerpt: "Vertica 기반 금융권 DW의 장기 운영을 지원하며 대용량
     <span class="period">2021.03 - 현재</span>
     <span class="tech">Vertica · DW Architecture · Tuning · Capacity Planning</span>
   </div>
-  <h2 class="work-card__title">금융권 DW 운영 컨설팅</h2>
+  <h2 class="work-card__title">금융권 DW 플랫폼 엔지니어링 및 엔진 최적화</h2>
   <p class="work-card__lede">장기 운영 환경에서 데이터 인프라의 확장성, 성능, 안정성을 동시에 관리하기 위한 기술 컨설팅과 운영 고도화를 수행했습니다.</p>
   <div class="work-card__metrics">
     <div class="metric"><div class="metric__num">TB > PB</div><div class="metric__label">안정적 확장 규모</div></div>
