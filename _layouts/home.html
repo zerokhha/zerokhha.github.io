@@ -18,7 +18,7 @@
             {% assign work_posts = site.posts | where: "categories", "work" | sort: "date" | reverse %}
             {% if work_posts.size > 0 %}
               <div class="work-list row">
-                {% for post in work_posts limit:6 %}
+                {% for post in work_posts %}
                   <div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn">
                     {% include content-list.html %}
                   </div>
