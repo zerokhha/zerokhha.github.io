@@ -1,6 +1,6 @@
 ---
 layout: inner
-title: "금융권 정보계 DW 성능 개선"
+title: "금융권 통합 DW 성능 개선"
 date: 2026-07-06 04:00:00 +0900
 permalink: /work/one-dw-performance-improve/
 period: "2025.01 - 2025.05"
@@ -13,7 +13,7 @@ excerpt: "대용량 테이블 조회 시 발생하는 디스크 I/O 병목을 �
     <span class="period">2025.01 - 2025.05</span>
     <span class="tech">DBMS Architecture · Direct Read · Concurrency Control</span>
   </div>
-  <h2 class="work-card__title">금융권 정보계 DW 성능 개선</h2>
+  <h2 class="work-card__title">금융권 통합 DW 성능 개선</h2>
   <p class="work-card__lede">캐시 디스크 우회와 자동 제어를 통해 디스크 I/O 병목을 해소하고 안정적인 분석 환경을 확보했습니다.</p>
   <div class="work-card__metrics">
     <div class="metric"><div class="metric__num">70%</div><div class="metric__label">배치 안정화</div></div>
@@ -43,7 +43,7 @@ excerpt: "대용량 테이블 조회 시 발생하는 디스크 I/O 병목을 �
 <div class="post-step" markdown="1">
 ##### 1. 캐시 레이어 우회를 통한 쿼리 실행 경로 최적화
 * I/O 병목의 근본 원인이었던 캐시 디스크 쓰기 과정을 생략하고, 스토리지에서 데이터를 직접 조회하는 **직접 조회(Direct Read) 방식**으로 쿼리 실행 경로를 재설계했습니다.
-* 이를 통해 대용량 테이블 스캔 시 백그라운드 캐시 적재 단계(`Compute` $\leftrightarrow$ `Cache` $\leftrightarrow$ `Storage`)에서 유발되던 디스크 경합 현상을 원천적으로 차단했습니다.
+* 이를 통해 대용량 테이블 스캔 시 백그라운드 캐시 적재 단계(`Compute` ↔ `Cache` ↔ `Storage`)에서 유발되던 디스크 경합 현상을 원천적으로 차단했습니다.
 </div>
 
 <div class="post-step" markdown="1">

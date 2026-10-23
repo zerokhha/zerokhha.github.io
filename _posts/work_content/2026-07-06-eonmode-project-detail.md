@@ -1,6 +1,6 @@
 ---
 layout: inner
-title: "금융권 비즈니스 업무 이관"
+title: "금융권 DW 비즈니스 업무 이관"
 date: 2026-07-06 00:00:00 +0900
 permalink: /work/eonmode-project/
 period: "2021.06 - 2021.10"
@@ -13,7 +13,7 @@ excerpt: "Hadoop 내 대규모 분석 데이터를 Vertica로 이관하기 위�
     <span class="period">2021.06 - 2021.10</span>
     <span class="tech">Hadoop(HDFS) · Vertica · Shell Script</span>
   </div>
-  <h2 class="work-card__title">금융권 비즈니스 업무 이관</h2>
+  <h2 class="work-card__title">금융권  DW 비즈니스 업무 이관</h2>
   <p class="work-card__lede">Hadoop에서 Vertica로 대규모 데이터 이관을 병렬 적재 아키텍처와 자동화로 완성했습니다.</p>
   <div class="work-card__metrics">
     <div class="metric"><div class="metric__num">7TB</div><div class="metric__label">6시간 적재</div></div>

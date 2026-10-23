@@ -1,7 +1,7 @@
 ---
 layout: inner
 position: left
-title: "금융권 비즈니스 업무 이관"
+title: "금융권 DW 비즈니스 업무 이관"
 date: 2026-07-06 00:00:00 +0900
 categories: work
 slug: eonmode-project
