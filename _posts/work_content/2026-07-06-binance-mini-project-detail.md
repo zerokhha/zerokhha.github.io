@@ -23,9 +23,6 @@ excerpt: "Binance API로 실시간 암호화폐 거래 데이터를 수집하고
 <!-- callout-end -->
 
 ---
-
-### 배경 및 과제 (Background)
-
 <section class="post-section post-section--background" markdown="1">
 ### 배경 및 과제 (Background)
 * **실시간 데이터 수집 요구:** Binance API를 통해 암호화폐 시세와 거래 데이터를 지속적으로 확보해야 하는 필요성이 있었습니다.
@@ -34,7 +31,6 @@ excerpt: "Binance API로 실시간 암호화폐 거래 데이터를 수집하고
 </section>
 
 ---
-
 ### 해결 과정 (Action)
 
 <section class="post-section post-section--action" markdown="1">
@@ -52,9 +48,6 @@ excerpt: "Binance API로 실시간 암호화폐 거래 데이터를 수집하고
 </section>
 
 ---
-
-### 성과 (Result)
-
 <section class="post-section post-section--result" markdown="1">
 ### 성과 (Result)
 * **API 기반 데이터 수집 역량 확보:** 실시간 데이터 소스와의 연동 경험을 통해 안정적인 수집 프로세스를 설계할 수 있었습니다.

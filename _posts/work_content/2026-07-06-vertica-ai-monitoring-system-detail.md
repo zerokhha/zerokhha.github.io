@@ -23,9 +23,6 @@ excerpt: "Vertica 특화 대시보드와 AI 기반 ChatOps를 결합해 운영 �
 <!-- callout-end -->
 
 ---
-
-### 배경 및 과제 (Background)
-
 <section class="post-section post-section--background" markdown="1">
 ### 배경 및 과제 (Background)
 * **Vertica 운영 지표 자동화 필요:** 대용량 DW 운영 중 반복적으로 확인해야 하는 핵심 관리 지표를 자동화해 운영 부담을 줄일 필요가 있었습니다.
@@ -33,7 +30,6 @@ excerpt: "Vertica 특화 대시보드와 AI 기반 ChatOps를 결합해 운영 �
 </section>
 
 ---
-
 ### 해결 과정 (Action)
 
 <section class="post-section post-section--action" markdown="1">
@@ -58,9 +54,6 @@ excerpt: "Vertica 특화 대시보드와 AI 기반 ChatOps를 결합해 운영 �
 </section>
 
 ---
-
-### 성과 (Result)
-
 <section class="post-section post-section--result" markdown="1">
 ### 성과 (Result)
 * **운영 지표 자동화:** Vertica 운영 상 핵심 이슈를 자동 수집·시각화해 반복 확인 부담을 줄였습니다.

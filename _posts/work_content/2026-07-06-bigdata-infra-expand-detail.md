@@ -23,9 +23,6 @@ excerpt: "기존 분석 시스템의 성능 및 확장성 한계를 극복하기
 <!-- callout-end -->
 
 ---
-
-### 배경 및 과제 (Background)
-
 <section class="post-section post-section--background" markdown="1">
 ### 배경 및 과제 (Background)
 * **신규 DBMS 도입 및 마이그레이션 필요:** 조직 내 빅데이터 분석 수요 증가로 인해 기존 시스템의 성능과 확장성 한계를 극복하고자 신규 DBMS 도입을 추진했습니다.
@@ -34,7 +31,6 @@ excerpt: "기존 분석 시스템의 성능 및 확장성 한계를 극복하기
 </section>
 
 ---
-
 ### 해결 과정 (Action)
 
 <section class="post-section post-section--action" markdown="1">
@@ -54,9 +50,6 @@ excerpt: "기존 분석 시스템의 성능 및 확장성 한계를 극복하기
 </section>
 
 ---
-
-### 성과 (Result)
-
 <section class="post-section post-section--result" markdown="1">
 ### 성과 (Result)
 * **마이그레이션 작업의 90% 이상 자동화:** DDL 자동 변환과 배포 체계를 도입해 반복적이고 안정적인 스키마 생성이 가능해졌습니다.

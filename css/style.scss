@@ -362,7 +362,13 @@ button.btn, input.btn {
 
 /* Work list styles */
 .work-list {
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 4em;
+}
+.work-list > [class*="col-"] {
+  display: flex;
+  margin-bottom: 1.5em;
 }
 .work-item {
   background: #fff;
@@ -383,6 +389,7 @@ button.btn, input.btn {
   min-height: 270px;
   box-shadow: 0 8px 24px rgba(30, 55, 70, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  width: 100%;
 }
 .work-item:hover,
 .work-item:focus-within {
@@ -501,7 +508,7 @@ button.btn, input.btn {
 }
 .work-card__meta{font-size:13px;color:#6b7280;margin-bottom:8px}
 .work-card__title{margin:0 0 8px;font-size:20px;color:#1f2937}
-.work-card__lede{margin:0;color:#374151;font-weight:600}
+.work-card__lede{margin:0;color:#374151;font-size:1.05em;line-height:1.65;font-weight:600}
 .work-card__metrics{display:flex;gap:16px;margin-top:12px}
 .metric{display:flex;flex-direction:column;align-items:flex-start}
 .metric__num{font-size:18px;font-weight:700;color:#e53e3e}
@@ -516,8 +523,8 @@ button.btn, input.btn {
 .post-section{
   background: #ffffff;
   border-left: 4px solid rgba(43, 108, 176, 0.12);
-  padding: 18px 20px;
-  margin: 18px 0;
+  padding: 22px 24px;
+  margin: 24px 0;
   border-radius:6px;
 }
 .post-section h3{
@@ -533,12 +540,13 @@ button.btn, input.btn {
 .post-section--action h4{
   margin-top:1em;
   margin-bottom:0.4em;
-  padding-left:0.5em;
-  border-left:3px solid #63b3ed;
 }
 
-.post-section ul{ margin-left:1.15em; color:#3a4448; line-height:1.8 }
+.post-section p,
+.post-section li{ font-size:1em; }
+.post-section ul{ margin:0.6em 0 0 1.15em; color:#3a4448; line-height:1.8 }
 .post-section strong{ color:#153243 }
+.post-step + .post-step{ margin-top:1.5em; padding-top:1.5em; border-top:1px solid #edf2f4; }
 
 /* result emphasis */
 .post-section--result{ background: linear-gradient(180deg, #ffffff 0%, #f7fffb 100%); }
@@ -546,6 +554,8 @@ button.btn, input.btn {
 
 @include bp-xsmall {
   .post-section{padding:14px}
+  .work-card__title{font-size:18px}
+  .work-card__lede{font-size:1em}
 }
 
 /* Summary (TL;DR) style removed for detail posts */

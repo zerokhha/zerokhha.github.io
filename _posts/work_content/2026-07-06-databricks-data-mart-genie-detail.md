@@ -23,9 +23,6 @@ excerpt: "현업 자연어 질의 기반 AI 데이터 조회 환경 검증을 �
 <!-- callout-end -->
 
 ---
-
-### 배경 및 과제 (Background)
-
 <section class="post-section post-section--background" markdown="1">
 ### 배경 및 과제 (Background)
 * **AI 데이터 조회 환경 검증:** 현업 사용자가 자연어로 데이터를 질의하고 결과를 확인할 수 있는 환경의 실효성을 검증하기 위한 PoC 수행
@@ -34,7 +31,6 @@ excerpt: "현업 자연어 질의 기반 AI 데이터 조회 환경 검증을 �
 </section>
 
 ---
-
 ### 해결 과정 (Action)
 
 <section class="post-section post-section--action" markdown="1">
@@ -53,9 +49,6 @@ excerpt: "현업 자연어 질의 기반 AI 데이터 조회 환경 검증을 �
 </section>
 
 ---
-
-### 성과 (Result)
-
 <section class="post-section post-section--result" markdown="1">
 ### 성과 (Result)
 * **Genie 정답률 40~50% → 90% 개선:** 주요 질문 20개를 기준으로 정답 SQL 학습 및 벤치마크 검증을 수행해 질의 정확도 향상

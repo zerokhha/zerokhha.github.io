@@ -23,16 +23,12 @@ excerpt: "Hadoop 내 대규모 분석 데이터를 Vertica로 이관하기 위�
 <!-- callout-end -->
 
 ---
-
-### 배경 및 과제 (Background)
-
 <section class="post-section post-section--background" markdown="1">
 ### 배경 및 과제 (Background)
 * **대규모 데이터 이관 필요:** Hadoop 내에 저장된 대규모 분석 데이터를 일정 기한 내에 Vertica로 이관해야 하는 성능 및 운영 효율성 과제가 있었습니다.
 </section>
 
 ---
-
 ### 해결 과정 (Action)
 
 <section class="post-section post-section--action" markdown="1">
@@ -55,9 +51,6 @@ excerpt: "Hadoop 내 대규모 분석 데이터를 Vertica로 이관하기 위�
 </section>
 
 ---
-
-### 성과 (Result)
-
 <section class="post-section post-section--result" markdown="1">
 ### 성과 (Result)
 * **대규모 이관을 안정적으로 완료:** 병렬 적재와 자동화 체계를 통해 짧은 기간 안에 대량 데이터 이관을 마무리했습니다.

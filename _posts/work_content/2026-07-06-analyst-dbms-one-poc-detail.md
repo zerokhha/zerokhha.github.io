@@ -23,9 +23,6 @@ excerpt: "기존 분석 시스템의 성능 및 확장성 한계를 극복하기
 <!-- callout-end -->
 
 ---
-
-### 배경 및 과제 (Background)
-
 <section class="post-section post-section--background" markdown="1">
 ### 배경 및 과제 (Background)
 * **성능 및 확장성 한계 직면:** 기존 분석 시스템의 특정 RDBMS 종속 구조로 인해 대량 데이터 처리 시 쿼리 성능 저하 및 확장성 문제 발생
@@ -34,7 +31,6 @@ excerpt: "기존 분석 시스템의 성능 및 확장성 한계를 극복하기
 </section>
 
 ---
-
 ### 해결 과정 (Action)
 
 <section class="post-section post-section--action" markdown="1">
@@ -54,9 +50,6 @@ excerpt: "기존 분석 시스템의 성능 및 확장성 한계를 극복하기
 </section>
 
 ---
-
-### 성과 (Result)
-
 <section class="post-section post-section--result" markdown="1">
 ### 성과 (Result)
 

@@ -23,9 +23,6 @@ excerpt: "이원화 DW를 통합형 ONE DW로 재구축하고 Kafka 기반 실�
 <!-- callout-end -->
 
 ---
-
-### 배경 및 과제 (Background)
-
 <section class="post-section post-section--background" markdown="1">
 ### 배경 및 과제 (Background)
 * **DW 구조적 한계 및 도메인 미분리:** 기존 DW가 단일 스키마 체계로 운영되어 업무 도메인 구분이 미흡했고, 이로 인한 데이터 중복과 충돌 문제가 발생했습니다.
@@ -34,7 +31,6 @@ excerpt: "이원화 DW를 통합형 ONE DW로 재구축하고 Kafka 기반 실�
 </section>
 
 ---
-
 ### 해결 과정 (Action)
 
 <section class="post-section post-section--action" markdown="1">
@@ -73,9 +69,6 @@ excerpt: "이원화 DW를 통합형 ONE DW로 재구축하고 Kafka 기반 실�
 </section>
 
 ---
-
-### 성과 (Result)
-
 <section class="post-section post-section--result" markdown="1">
 ### 성과 (Result)
 * **데이터 거버넌스 명확화:** 도메인 중심 DW 재구축을 통해 데이터 표준과 관리 기준을 수립하고 고질적인 데이터 중복·충돌 문제를 해소했습니다.
