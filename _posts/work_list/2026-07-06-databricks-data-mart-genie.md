@@ -9,7 +9,7 @@ featured_image: ''
 project_link: '/work/databricks-data-mart-genie/'
 button_icon: ''
 button_text: 'Read More'
-summary_en: 'Built a Databricks Lakehouse data mart and validated natural-language queries with Genie.'
+summary_en: 'Built a Databricks Lakehouse sales data mart with annual Silver tables and a metric view, improving Genie query accuracy from 40–50% to 90%.'
 lead_text: '2026.08 - 2026.09'
 tech_stack: 'Databricks|SQL|Genie'
 ---
