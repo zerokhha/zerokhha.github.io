@@ -11,4 +11,5 @@ button_icon: ''
 button_text: 'Read More'
 summary_en: 'Built a lightweight Binance data pipeline for market data collection and processing.'
 lead_text: '2026.05 - '
+tech_stack: 'Python|API|ETL'
 ---

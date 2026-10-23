@@ -11,4 +11,5 @@ button_icon: ''
 button_text: 'Read More'
 summary_en: 'Built a Databricks Lakehouse data mart and validated natural-language queries with Genie.'
 lead_text: '2026.08 - 2026.09'
+tech_stack: 'Databricks|SQL|Genie'
 ---

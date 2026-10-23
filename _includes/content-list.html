@@ -3,17 +3,32 @@
   {% if work_link == nil or work_link == '' %}
     {% assign work_link = post.url %}
   {% endif %}
+  <div class="work-item__topline">
+    {% if post.lead_text %}
+      <span class="work-period">{{ post.lead_text }}</span>
+    {% endif %}
+    {% if post.categories contains 'personal' %}
+      <span class="work-kind">Personal</span>
+    {% else %}
+      <span class="work-kind">Professional</span>
+    {% endif %}
+  </div>
   <h3 class="work-title"><a href="{{ work_link | relative_url }}">{{ post.title }}</a></h3>
   {% if post.summary_en %}
     <p class="work-summary-en">{{ post.summary_en }}</p>
   {% endif %}
-  {% if post.lead_text %}
-    <p class="work-lead">{{ post.lead_text }}</p>
+  {% if post.tech_stack %}
+    <div class="work-tech-list" aria-label="Technology stack">
+      {% assign technologies = post.tech_stack | split: '|' %}
+      {% for technology in technologies %}
+        <span class="work-tech">{{ technology }}</span>
+      {% endfor %}
+    </div>
   {% endif %}
   <p class="work-excerpt">{% if post.excerpt %}{{ post.excerpt | strip_html | truncate: 200 }}{% else %}{{ post.content | strip_html | truncate: 200 }}{% endif %}</p>
   <p>
-    <a class="btn btn-default" href="{{ work_link | relative_url }}">
-      {{ post.button_text | default: "Read More" }}
+    <a class="work-link" href="{{ work_link | relative_url }}">
+      {{ post.button_text | default: "View case study" }} <span aria-hidden="true">→</span>
     </a>
   </p>
 </div>

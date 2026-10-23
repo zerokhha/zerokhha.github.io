@@ -11,4 +11,5 @@ button_icon: ''
 button_text: 'Read More'
 summary_en: 'Provided DW operations consulting and stabilization support for a financial platform.'
 lead_text: '2021.03 - '
+tech_stack: 'SQL|Shell|DW Operations'
 ---

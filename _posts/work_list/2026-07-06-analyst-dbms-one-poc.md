@@ -11,4 +11,5 @@ button_icon: ''
 button_text: 'Read More'
 summary_en: 'Proof of concept for a financial analytics DW migration and validation.'
 lead_text: '2022.07'
+tech_stack: 'SQL|DBMS ONE|Query Optimization'
 ---

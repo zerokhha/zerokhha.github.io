@@ -9,4 +9,5 @@ project_link: /work/vertica-ai-monitoring-system/
 button_text: 'Read More'
 summary_en: 'Built an AI-powered Vertica monitoring and ChatOps system.'
 lead_text: '2026.06'
+tech_stack: 'Vertica|Python|Grafana|ChatOps'
 ---

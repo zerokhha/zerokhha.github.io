@@ -45,7 +45,7 @@ body {
 }
 
 *, *:before, *:after {
-  font-family: 'Pretendard', 'Noto Sans KR', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif !important;
+  font-family: 'Pretendard', 'Noto Sans KR', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
 }
 
 /* 단, 제목(h1~h6)은 Merriweather 서체를 쓰기로 했으니, 제목은 유지되도록 순서를 아래에 두거나 유지해줘 */
@@ -366,8 +366,9 @@ button.btn, input.btn {
 }
 .work-item {
   background: #fff;
-  border: 1px solid #eef3f6;
-  padding: 1.25em;
+  border: 1px solid #e3eaee;
+  border-radius: 8px;
+  padding: 1.5em;
   margin-bottom: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -379,7 +380,37 @@ button.btn, input.btn {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  min-height: 220px;
+  min-height: 270px;
+  box-shadow: 0 8px 24px rgba(30, 55, 70, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.work-item:hover,
+.work-item:focus-within {
+  transform: translateY(-4px);
+  border-color: #b9cbd5;
+  box-shadow: 0 14px 30px rgba(30, 55, 70, 0.1);
+}
+.work-item__topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75em;
+  min-height: 1.5em;
+  margin-bottom: 1em;
+  color: #72838c;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.work-kind {
+  color: #2b6cb0;
+  white-space: nowrap;
+}
+.work-period {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .work-item .work-image-link {
   display: block;
@@ -399,30 +430,62 @@ button.btn, input.btn {
 }
 .work-title {
   margin-top: 0;
-  margin-bottom: 0.25em;
-  font-size: 18px;
-  color: #6c7a80;
-  font-weight: 600;
+  margin-bottom: 0.5em;
+  font-size: 19px;
+  color: #263943;
+  font-weight: 700;
+  line-height: 1.45;
 }
 .work-summary-en {
   color: #556770;
-  margin-bottom: 0.35em;
+  margin-bottom: 1em;
   font-size: 13px;
   line-height: 1.6;
 }
-.work-lead {
-  color: #9eb1bd;
-  margin-bottom: 0.4em;
-  font-size: 13px;
+.work-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  margin-bottom: 1em;
+}
+.work-tech {
+  padding: 0.35em 0.7em;
+  border: 1px solid #d9e6ec;
+  border-radius: 999px;
+  color: #416273;
+  background: #f5f9fb;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.2;
 }
 .work-excerpt {
-  margin-bottom: 0.6em;
+  margin-top: auto;
+  margin-bottom: 1em;
   font-size: 14px;
-  color: #4d5a60;
+  color: #52636b;
+  line-height: 1.7;
 }
 
-.work-item .btn {
-  margin-top: 0.5em;
+.work-item > p:last-child {
+  margin: 0;
+}
+.work-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  color: #245b80;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+.work-link span {
+  font-size: 17px;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+.work-link:hover span,
+.work-link:focus span {
+  transform: translateX(3px);
 }
 
 /*--------------------------------------------------------------

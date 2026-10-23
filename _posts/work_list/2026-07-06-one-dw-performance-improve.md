@@ -11,4 +11,5 @@ button_icon: ''
 button_text: 'Read More'
 summary_en: 'Improved batch and query performance for a financial information DW.'
 lead_text: '2025.01 - 2025.05'
+tech_stack: 'SQL|Query Tuning|Batch'
 ---

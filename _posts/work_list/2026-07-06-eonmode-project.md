@@ -12,4 +12,5 @@ button_icon: ''
 button_text: 'Read More'
 summary_en: 'Managed a financial business handover and operational transition.'
 lead_text: '2021.06 - 2021.10'
+tech_stack: 'SQL|Data Warehouse|Operations'
 ---
